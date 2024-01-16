@@ -1,6 +1,5 @@
 # Fix My Code Challenge
-___
-### Description
+### *Description*
 This is a type of project where I'll jump into an existing code base and fix it!
 That's all!
 
