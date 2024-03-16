@@ -5,16 +5,14 @@
 class Square():
     """Represents a square with methods to calculate its area and perimeter."""
 
-    width = 0
-
     def __init__(self, width=0, *args, **kwargs):
         self.width = width
 
-    def AreaOfMySquare(self):
+    def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return (self.width * self.width)
 
-    def PerimeterOfMySquare(self):
+    def perimeter_of_my_square(self):
         """Calculates the perimeter of the square."""
         return (self.width * 4)
 
@@ -24,7 +22,7 @@ class Square():
 
 
 if __name__ == "__main__":
-    s = Square(width=12, height=9)
+    s = Square(width=12)
     print(s)
-    print(s.AreaOfMySquare())
-    print(s.PerimeterOfMySquare())
+    print(s.area_of_my_square())
+    print(s.perimeter_of_my_square())
