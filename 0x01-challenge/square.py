@@ -15,6 +15,10 @@ class Square():
     def perimeter_of_my_square(self):
         """Calculates the perimeter of the square."""
         return (self.width * 4)
+    
+    def print_square(self):
+        for i in range(self.width):
+            print("#" * self.width)
 
     def __str__(self):
         """Returns the width as a string."""
@@ -22,7 +26,7 @@ class Square():
 
 
 if __name__ == "__main__":
-    s = Square(width=12)
-    print(s)
+    s = Square(width=3)
+    print(s.print_square())
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
