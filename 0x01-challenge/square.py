@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Class Module"""
 
+
 class Square():
     """Represents a square with methods to calculate its area and perimeter."""
 
@@ -14,14 +15,15 @@ class Square():
         return self.width * self.width
 
     def PerimeterOfMySquare(self):
+        """Calculates the perimeter of the square."""
         return (self.width * 4)
 
     def __str__(self):
+        """Returns the width as a string."""
         return "{}".format(self.width)
 
 
 if __name__ == "__main__":
-
     s = Square(width=12, height=9)
     print(s)
     print(s.AreaOfMySquare())
